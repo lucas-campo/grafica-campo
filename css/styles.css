@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(34, 34, 34); 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+nav ul{
+    text-align: center;
+}
+
+.menu {
+    position: sticky;
+    top: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+p {
+    color: blanchedalmond;
+}
+
+.nosotros {
+    color: blanchedalmond;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.nosotros {
+    text-align: center;
+}
+
+.whats {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+/*contactos*/
+
+h2 {
+    color: blanchedalmond;
+    text-align: center;
+}
+
+form {
+    color: blanchedalmond;
+    text-align: center;
+
+}
+
+
+
+
+/*productos*/
+
+.bloques {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+.fotos {
+    width: 200px;
+}
+
+
+/*portfolio*/
+
+.carrusel {
+    width: 70%;
+    display: block;
+    justify-content: center;
+}
+
+
+/*grids*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "productos productos"
+    "carousel carousel"
+    "nosotros nosotros"
+    "consulta consulta"
+    "footer footer"
+    "whats whats"
+    ;
+    justify-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+.menu {
+    grid-area: menu;
+}
+.carousel {
+    grid-area: carousel;
+}
+.nosotros {
+    grid-area: nosotros;
+}
+.footer {
+    grid-area: footer;
+}
+.whats {
+    grid-area: whats;
+}
+.productos {
+    grid-area: productos;
+}
+.cosulta {
+    grid-area: consulta;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+
+    .bloques {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-serv {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
