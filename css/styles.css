@@ -1,7 +1,15 @@
 body {
-    background-color: rgb(34, 34, 34); 
+    background-color: black;
     margin: 0;
     padding: 0;
+}
+
+.grid-container {
+    background-image: url(/imagenes/fondo.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    position: relative;
 }
 
 nav ul li {
@@ -78,18 +86,23 @@ form {
 
 
 
-
 /*productos*/
 
-.bloques {
-    display: inline-block;
-    margin: 10px;
-    margin-left: 100px;
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.fotos {
-    width: 200px;
+
+/*servicios*/
+
+.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 
 
 /*portfolio*/
