@@ -1,15 +1,44 @@
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body:before{
+content: "";
+width: 100%;
+height: 100%;
+background-color: black;
+position: absolute;
+opacity: 0.5;
 }
 
-.grid-container {
-    background-image: url(/imagenes/fondo.jpg);
-    width: 100%;
-    height: 600px;
-    background-size: cover;
+.menu .container-fluid {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.carousel {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    opacity: 0.98;
+}
+
+h1{
     position: relative;
+    color: white;
+}
+p{
+    position: relative;
+    color: white;
+}
+
+.nav-link {
+    color: white;
 }
 
 nav ul li {
@@ -20,38 +49,13 @@ nav ul{
     text-align: center;
 }
 
-.menu {
-    position: sticky;
-    top: 5px;
-    margin-bottom: 20px;
-}
-
 a {
-    text-decoration: none;
-    color: blanchedalmond;
-}
-
-p {
-    color: blanchedalmond;
-}
-
-.nosotros {
-    color: blanchedalmond;
-}
-
-.logo{
-    width: 150px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.carousel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-decoration: none; 
+    color: white; 
 }
 
 footer ul li{
+    position: relative;
     display: inline-block;
     padding: 5px;
 }
@@ -66,19 +70,21 @@ footer {
 
 .whats {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
 }
 
 
 /*contactos*/
 
 h2 {
+    position: relative;
     color: blanchedalmond;
     text-align: center;
 }
 
 form {
+    position: relative;
     color: blanchedalmond;
     text-align: center;
 
@@ -113,48 +119,6 @@ form {
     justify-content: center;
 }
 
-
-/*grids*/
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-    "logo logo"
-    "menu menu"
-    "productos productos"
-    "carousel carousel"
-    "nosotros nosotros"
-    "consulta consulta"
-    "footer footer"
-    "whats whats"
-    ;
-    justify-items: center;
-}
-
-.logo {
-    grid-area: logo;
-}
-.menu {
-    grid-area: menu;
-}
-.carousel {
-    grid-area: carousel;
-}
-.nosotros {
-    grid-area: nosotros;
-}
-.footer {
-    grid-area: footer;
-}
-.whats {
-    grid-area: whats;
-}
-.productos {
-    grid-area: productos;
-}
-.cosulta {
-    grid-area: consulta;
-}
 
 /*media queries*/
 
