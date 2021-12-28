@@ -1,0 +1,31 @@
+.titulo {
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+.titulo-servicios {
+    @extend .titulo;
+    color: yellow;
+}
+
+
+@mixin size {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.carousel {
+    margin-left: 2%;
+    margin-right: 2%; 
+    opacity: 0.98;
+    @include size
+}
+.carousel-inner {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    @include size
+}

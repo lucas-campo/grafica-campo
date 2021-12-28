@@ -1,135 +1,146 @@
 body {
-    background-image: url(../imagenes/fondo.jpg);
-    background-size: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-body:before{
-content: "";
-width: 100%;
-height: 100%;
-background-color: black;
-position: absolute;
-opacity: 0.5;
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.menu .container-fluid {
-    margin-top: 1%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
 }
 
-
-.carousel {
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    opacity: 0.98;
+h1, p {
+  text-align: center;
+  position: relative;
+  color: white;
 }
 
-h1{
-    position: relative;
-    color: white;
-}
-p{
-    position: relative;
-    color: white;
-}
-
-
-.nav-link {
-    color: white;
+nav ul {
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 5px;
-}
-nav ul{
-    text-align: center;
+  display: inline-block;
+  padding: 5px;
 }
 
-a {
-    text-decoration: none; 
-    color: white; 
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-
-footer ul li{
-    position: relative;
-    display: inline-block;
-    padding: 5px;
+.menu .container-fluid {
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-footer {
-    text-align: center;
+.nav-link {
+  color: white;
 }
 
-
-.nosotros {
-    text-align: center;
+.titulo, .titulo-servicios {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 1%;
 }
 
-
-.whats {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
+.titulo-servicios {
+  color: yellow;
 }
 
+.carousel {
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: 0.98;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
-/*contactos*/
+.carousel-inner {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
-h2 {
-    position: relative;
-    color: blanchedalmond;
-    text-align: center;
+.titulo, .titulo-servicios {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 1%;
+}
+
+.titulo-servicios {
+  color: yellow;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+h2, .consulta {
+  position: relative;
+  color: blanchedalmond;
+  text-align: center;
 }
 
 .consulta {
-    position: relative;
-    color: blanchedalmond;
-    margin-left: 20%;
-    margin-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-
-
-/*productos y servicios*/
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
+footer {
+  text-align: center;
 }
 
-
-
-/*portfolio*/
-
-.carousel-inner {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    position: relative;
+footer ul li {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
 }
-
-
-/*media queries*/
 
 @media screen and (max-width: 1024px) {
-
-    .cards {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        margin-bottom: 5%;
-    }
-
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
 }
+/*# sourceMappingURL=styles.css.map */
