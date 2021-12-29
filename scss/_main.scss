@@ -29,3 +29,9 @@
     position: relative;
     @include size
 }
+
+.whats {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}

@@ -80,6 +80,12 @@ nav ul li a {
   margin-bottom: 2%;
 }
 
+.whats {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
 .titulo, .titulo-servicios {
   text-align: center;
   color: white;
@@ -126,6 +132,11 @@ footer ul li {
   position: relative;
   display: inline-block;
   padding: 5px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
